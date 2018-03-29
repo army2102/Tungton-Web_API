@@ -40,10 +40,13 @@ module.exports = {
 
 	productInStores: {
 		isInTheDatabase: 'SELECT count(*) as result FROM product_in_stores WHERE product_id = ? AND store_id = ?',
+		
 		create: 'INSERT INTO product_in_stores (product_id, store_id, product_quantity, product_price, product_minimum_quantity) VALUES (?, ?, ?, ?, ?)',
 
 		updateStockIn: 'UPDATE product_in_stores SET product_quantity = product_quantity + ?, product_price = ?, product_minimum_quantity = ? WHERE product_id = ? AND store_id = ?',
+
 		updateStockOut: 'UPDATE product_in_stores SET product_quantity = product_quantity - ? WHERE product_id = ? AND store_id = ?',
+
 		getStockQuantity: 'SELECT product_quantity FROM product_in_stores WHERE product_id = ? AND store_id = ?'
 	},
 
