@@ -396,7 +396,7 @@ router
             error: error
           });
 
-        if (results.length === 1) {
+        if (results.length >= 1) {
           const connection = mysql.createConnection(config);
           connection.query(
             querys.products.getProducts,
