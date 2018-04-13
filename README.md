@@ -2,7 +2,7 @@ Web API ของ Application Tungton
 
 จัดทำ RESTful API ตาม Guide ที่ http://www.restapitutorial.com/
 
-Tungton เป็น Application จัดการร้านค้าขายของชำ โดยมีจัดประสงค์เพื่อ
+Tungton เป็น Application จัดการร้านค้าขายของชำ โดยมีจุดประสงค์เพื่อ
 
  - ให้ร้านค้าสามารถจัดการ Stock สินค้าได้ผ่าน Application
  - ให้ร้านค้าสามารถเรียกดู รายรับ, รายจ่าย ประจำวัน/เดือน ของร้าน
